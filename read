@@ -2,51 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mountain Dew Store</title>
+  <title>Block Blast</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Mountain Dew Store</h1>
-    <div id="cart-count">Cart: 0 items</div>
+    <h1>Block Blast</h1>
+    <p>The Ultimate Puzzle Challenge!</p>
   </header>
 
-  <main>
-    <section id="products">
-      <div class="product" data-name="Mountain Dew Original" data-price="1.99">
-        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Mountain_Dew_logo.svg" alt="Original">
-        <h2>Original</h2>
-        <p>$1.99</p>
-        <button onclick="addToCart(this)">Add to Cart</button>
-      </div>
+  <section class="hero">
+    <img src="https://via.placeholder.com/600x300.png?text=Block+Blast+Gameplay" alt="Block Blast Gameplay">
+  </section>
 
-      <div class="product" data-name="Mountain Dew Code Red" data-price="2.49">
-        <img src="https://upload.wikimedia.org/wikipedia/en/2/25/Mountain_Dew_Code_Red.png" alt="Code Red">
-        <h2>Code Red</h2>
-        <p>$2.49</p>
-        <button onclick="addToCart(this)">Add to Cart</button>
-      </div>
-
-      <div class="product" data-name="Mountain Dew Baja Blast" data-price="2.79">
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Baja_Blast.png" alt="Baja Blast">
-        <h2>Baja Blast</h2>
-        <p>$2.79</p>
-        <button onclick="addToCart(this)">Add to Cart</button>
-      </div>
-    </section>
-
-    <section id="cart">
-      <h2>Your Cart</h2>
-      <ul id="cart-items"></ul>
-      <p id="cart-total">Total: $0.00</p>
-      <button onclick="checkout()">Checkout</button>
-    </section>
-  </main>
+  <section class="description">
+    <h2>About the Game</h2>
+    <p>
+      Block Blast is an addictive puzzle game where you blast colorful blocks, solve tricky challenges, and level up!
+      Easy to pick up, hard to put down. Challenge yourself and your friends now!
+    </p>
+    <button class="download">Download for Android</button>
+    <button class="download">Download for iOS</button>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Mountain Dew Store</p>
+    <p>&copy; 2025 Block Blast Studios</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
