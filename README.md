@@ -27,3 +27,21 @@ func _physics_process(delta):
             velocity.y = jump_velocity
 
     move_and_slide()
+# World.gd
+extends Node3D
+
+const BLOCK_SCENE = preload("res://Block.tscn") # This is your block (we’ll make it below)
+const WORLD_WIDTH = 16
+const WORLD_LENGTH = 16
+const GROUND_HEIGHT = 4
+
+func _ready():
+    generate_flat_world()
+
+func generate_flat_world():
+    for x in WORLD_WIDTH:
+        for z in WORLD_LENGTH:
+            for y in GROUND_HEIGHT:
+                var block = BLOCK_SCENE.instantiate()
+                block.position = Vector3(x, y, z)
+                add_child(block)
