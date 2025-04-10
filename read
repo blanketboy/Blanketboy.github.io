@@ -8,25 +8,19 @@
 <body>
   <header>
     <h1>Block Blast</h1>
-    <p>The Ultimate Puzzle Challenge!</p>
+    <p>Click blocks of the same color to blast them!</p>
+    <div id="score">Score: 0</div>
   </header>
 
-  <section class="hero">
-    <img src="https://via.placeholder.com/600x300.png?text=Block+Blast+Gameplay" alt="Block Blast Gameplay">
-  </section>
-
-  <section class="description">
-    <h2>About the Game</h2>
-    <p>
-      Block Blast is an addictive puzzle game where you blast colorful blocks, solve tricky challenges, and level up!
-      Easy to pick up, hard to put down. Challenge yourself and your friends now!
-    </p>
-    <button class="download">Download for Android</button>
-    <button class="download">Download for iOS</button>
-  </section>
+  <main>
+    <div id="game-board"></div>
+    <button onclick="resetGame()">Restart Game</button>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Block Blast Studios</p>
+    <p>&copy; 2025 Block Blast</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
